@@ -42,10 +42,7 @@ CREATE TABLE `account` (
 
 INSERT INTO `account` (`id`, `manv`, `username`, `password`, `access`) VALUES
 (1, 1, 'admin', 'admin', 'admin'),
-(4, 12, 'quanly', 'quanly', 'quanly'),
-(5, 13, 'nhanvien', 'nhanvien', 'nhanvien'),
-(6, 14, 'nhanvien2', 'nhanvien2', 'nhanvien'),
-(10, 21, 'lotus', 'lotus', 'quanly');
+
 
 -- --------------------------------------------------------
 
@@ -93,12 +90,7 @@ CREATE TABLE `nhanvien` (
 --
 
 INSERT INTO `nhanvien` (`manv`, `ho`, `ten`, `ngaysinh`, `diachi`, `sdt`, `ngaybatdau`, `luong`) VALUES
-(1, 'Nguyễn Đức', 'Thắng', '1999-09-21', 'ĐH Tôn Đức Thắng', '0964311776', '2019-01-01', 1000000),
-(12, 'Hoàng', 'Hạnh', '1999-07-02', 'quận 2', '0336485348', '2019-07-02', 500000),
-(13, 'Nguyễn', 'C', '1999-07-01', 'quận 9', '0366944112', '2019-07-02', 200),
-(14, 'Hoàng', 'Thang', '1999-07-02', '123', '0964311776', '2019-07-02', 500000),
-(21, 'Hoàng Thị Hồng', 'Hạnh', '1980-05-30', 'Quận 1', '0964311776', '1988-06-19', 500000);
-
+(1, 'Nguyễn Đức', 'Thắng', '1999-09-21', 'ĐH Tôn Đức Thắng', '0964311776', '2019-01-01', 1000000);
 -- --------------------------------------------------------
 
 --
@@ -120,9 +112,6 @@ CREATE TABLE `sanpham` (
 -- Dumping data for table `sanpham`
 --
 
-INSERT INTO `sanpham` (`masp`, `tensp`, `loaisp`, `soluong`, `gia`, `size`, `dvt`, `hinhanh`) VALUES
-('Ao-1', 'Quần đùi', 'Quần', 10, 100000, 'M', 'Cái', '459e62d6d8753e2b6764.jpg'),
-('Ao-2', 'Áo Vàng', 'Áo', 10, 100000, 'S', 'Cái', '30d778f0bd555b0b0244.jpg');
 
 --
 -- Indexes for dumped tables
@@ -171,7 +160,7 @@ ALTER TABLE `sanpham`
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `hoadon`
@@ -183,7 +172,7 @@ ALTER TABLE `hoadon`
 -- AUTO_INCREMENT for table `nhanvien`
 --
 ALTER TABLE `nhanvien`
-  MODIFY `manv` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `manv` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
