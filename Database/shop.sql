@@ -41,7 +41,7 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`id`, `manv`, `username`, `password`, `access`) VALUES
-(1, 1, 'admin', 'admin', 'admin'),
+(1, 1, 'admin', 'admin', 'admin');
 
 
 -- --------------------------------------------------------
